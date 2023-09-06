@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    color: #ed6b31;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.list-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+img {
+    height: 100%;
+}
+
+.wheel-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.wheel {
+    display: block;
+}
+
+.btn-spin {
+    font: 1.5em/0 sans-serif;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    margin: -15%;
+    background: #fff;
+    color: #fff;
+    box-shadow: 0 0 0 8px currentColor, 0 0 15px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: 0.8s;
+}
+
+.btn-spin::after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    border: 10px solid transparent;
+    border-bottom-color: currentColor;
+    border-top: none;
+}
+
+.inputs-container {
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.names-list {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.name-input {
+    border: none;
+    border-bottom: 1px solid #bebebe;
+    outline: none;
+}
+
+.names-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-add {
+    background: none;
+    border: none;
+    outline: none;
+    height: 28px;
+}

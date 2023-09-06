@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Kangaroo Wheel of Fortune</title>
+	<meta charset="UTF-8"/>
+	<script defer src="script.js"></script>
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<div class="container">
+	<h1 class="header">Kangaroo Wheel of Fortune</h1>
+	<h3>Enter names and spin the wheel!</h3>
+	<div class="list-container">
+		<img src="img/kangaroo.png" alt="kangaroo" width="150">
+		<div class="inputs-container">
+			<ul class="names-list" id="nameInputs">
+				<!-- li dynamically generated -->
+			</ul>
+			<button class="btn-add" id="addMoreNames">
+				<img src="img/add.svg" alt="add">
+			</button>
+		</div>
+	</div>
+
+	<div class="wheel-wrapper" id="wheelOfFortune">
+		<canvas class="wheel" id="wheel" width="300" height="300"></canvas>
+		<div class="btn-spin" id="spin">SPIN</div>
+	</div>
+</div>
+</body>
+</html>
